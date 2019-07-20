@@ -1,0 +1,35 @@
+
+.mat-card{
+    position: fixed;
+    top: 30%;
+    left: 39%;
+    width: 350px;
+    height: 298px;
+}
+
+
+mat-form-field#inputUsername {
+    width: 250px;
+    margin-left: 31px;
+    margin-top: 24px;
+}
+
+mat-form-field#inputPassword{
+    width: 250px;
+    margin-left: 31px;
+    margin-top: 24px;
+}
+
+
+button.mat-raised-button.mat-primary {
+    float: right;
+}
+
+mat-card-actions.mat-card-actions {
+    height: 59px;
+    width: 280px;
+}
+
+mat-card.mat-card {
+    opacity: 0.90;
+}

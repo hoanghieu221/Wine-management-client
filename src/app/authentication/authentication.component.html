@@ -1,0 +1,29 @@
+<mat-card>
+        <mat-card-header>
+                <mat-card-title>Đăng nhập vào hệ thống</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+                <div class="form_login row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                        <mat-form-field  id="inputUsername">
+                                                <input type="text"  matInput placeholder="Tên tài khoản">
+                                        </mat-form-field>
+                                </div>
+                                <div class="row">
+                                        <mat-form-field id="inputPassword">
+                                                <input  matInput placeholder="Mật khẩu"
+                                                        [type]="hide ? 'password' : 'text'">
+                                                <button mat-icon-button matSuffix (click)="hide = !hide"
+                                                        [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                                </button>
+                                        </mat-form-field>
+                                </div>
+                        </div>
+                </div>
+        </mat-card-content>
+        <mat-card-actions>
+                        <button mat-raised-button color="primary">Đăng nhập</button>
+        </mat-card-actions>
+</mat-card>
